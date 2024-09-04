@@ -1,0 +1,252 @@
+Q1:
+
+package javaPractice;
+
+import java.util.Scanner;
+
+public class Greaternumber {
+
+	public static void main(String[] args) {
+	
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the value of a");
+	int a=sc.nextInt();
+	System.out.println("enter the value of b");
+	int b=sc.nextInt();
+	System.out.println("enter the value of c");
+	int c=sc.nextInt();
+	System.out.println("enter the value of d");
+	int d=sc.nextInt();
+	if((a+b)>(c+d))
+	{
+		System.out.println("sum of a+b is greater than sum of c+d");
+	}else {
+		System.out.println("sum of c+d is greater than sum of a+b");
+
+	}
+	sc.close();
+
+	}
+	
+}
+
+Q2:
+
+package javaPractice;
+
+import java.util.Scanner;
+
+public class EvenNumber {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the value of X");
+		int x=sc.nextInt();
+		if(x%2==0) {
+			System.out.println("X is even number");
+		}
+		else
+		{System.out.println("X is odd number");
+		
+		}
+		
+        sc.close();
+	}
+
+}
+
+
+Q3:Print A to Z ?
+
+package javaPractice;
+
+public class While {
+
+	public static void main(String[] args) {
+		
+		int count=1;
+		while(count<=11) {
+			System.out.println("count is "+count);
+			count++;
+		}
+		
+		char ch;
+		for (ch='A';ch<='Z';++ch)
+		{
+			System.out.println(ch+"");
+		}
+}
+}
+
+Q4:Swapping of two numbers?
+
+package javaPractice;
+
+import java.util.Scanner;
+
+public class Swapping {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the value of x");
+		int x=sc.nextInt();
+		System.out.println("enter the value of y");
+		int y=sc.nextInt();
+		System.out.println("Values before swap");
+		System.out.println("x="+x);
+		System.out.println("y="+y);
+		System.out.println("               ");
+		//System.out.println("enter the value for temp");
+		int temp=sc.nextInt();
+		temp=x;
+		x=y;
+		y=temp;
+		System.out.println("After swap");
+		System.out.println("x="+x);
+		System.out.println("y="+y);
+
+sc.close();
+		
+		
+	}
+
+}
+
+Q5: Prime number or not?
+
+package javaPractice;
+
+import java.util.Scanner;
+
+public class While {
+
+	public static void main(String[] args) {
+		
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter the number");
+		int n=s.nextInt();
+		for(int i=2;i==n/2;i++)
+		{
+		System.out.println("Given number is prime");
+		}
+		System.out.println("Given number is not prime");
+                sc.close();
+		}
+		
+}
+
+
+Q6:Factorial of given number?
+
+package javaPractice;
+
+import java.util.Scanner;
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the value of x");
+		int x=sc.nextInt();
+		int y=1;
+		for(int i=1;i<=x;i++) {
+        y=y*i;
+		
+		}
+		System.out.println("Factorial for the number "+x+" is:"+y);
+     
+                sc.close();
+	}
+
+}
+
+
+Q7: Find length of string?
+
+package javaPractice;
+
+public class Length {
+
+	public static void main(String[] args) {
+		String msg="GUVI GEEK";
+		int x=msg.length();
+		System.out.println("Length of the given message is "+x);
+		
+		}
+
+}
+
+
+Q8:Print the string 10 times?
+
+package javaPractice;
+
+public class Length {
+
+	public static void main(String[] args) {
+		for(int i=0;i<10;i++) 
+		{
+			System.out.println("Welcome to Guvi");
+			
+		}
+
+	}
+
+}
+
+Q9:Senior citizen or not ?
+
+package javaPractice;
+
+import java.util.Scanner;
+
+public class IfSwitch {
+
+	public static void main(String[] args) {
+	
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your age");
+		int x=sc.nextInt();
+		if(x>60) {
+			System.out.println("I am a senior citizen");
+		}
+		else
+		{
+			System.out.println("I am not a senior citizen");
+		}
+                sc.close();
+}
+}
+
+Q10: Find the length of integer?
+
+package javaPractice;
+
+import java.util.Scanner;
+
+public class Count {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int count = 0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the value");
+		int num =sc.nextInt();
+
+	    for (; num != 0; num /= 10, ++count) {
+	    }
+
+	    System.out.println("Number of digits: " + count);
+	  
+            sc.close();
+
+	}
+
+}
+
+
